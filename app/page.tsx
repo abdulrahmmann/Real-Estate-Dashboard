@@ -1,47 +1,72 @@
-import Link from "next/link";
-import {sidebar} from "@/data";
-import Sidebar from "@/components/Sidebar";
+import DashboardLayout from "@/app/Dashboard/layout";
+import {propertyReferrals} from "@/data";
+import {Progress} from "@/components/ui/progress";
+import React from "react";
+import StatCards from "@/components/StatCards";
+import {TotalRevenueBarChart} from "@/components/TotalRevenueBarChart";
+import PropertyReferrals from "@/components/PropertyReferrals";
+import PropertyList from "@/components/PropertyList";
+import TopAgent from "@/components/TopAgent";
+import Customer from "@/components/Customer";
+import LatestSales from "@/components/LatestSales";
 
 export default function Home() {
     return (
-        <main className={`w-full min-h-screen bg-whiteColor`}>
-            <div className={`py-4 px-5`}>
-                <div className={`flex items-center justify-between`}>
-                    <img src={'/Logo.svg'} alt={'Logo'} className={``}/>
-                    <div className={`flex items-center gap-1 w-[20%] p-3 rounded-lg bg-[#F4F4F4]`}>
-                        <img src={'/icons/search.svg'} alt={''} className={`size-4`}/>
-                        <input
-                            placeholder={'Search Property, Customer etc'}
-                            className={`text-xs text-secondaryTextColor border-none outline-none bg-transparent w-full`}/>
-                    </div>
-                    <div className={`flex items-center gap-5 pr-5`}>
-                        <div className={`size-6 cursor-pointer`}>
-                            <img src={'/icons/bill-icon.svg'} alt={'bill'} className={``} />
-                        </div>
-                        <div className={`flex items-center gap-3`}>
-                            <img src={'/profile-image.png'} alt={'profile'} className={`size-10 object-contain rounded-full cursor-pointer`} />
-                            <div>
-                                <h2 className={`text-sm font-semibold text-primaryTextColor`}>Hawkins Maru</h2>
-                                <h4 className={`text-sm text-secondaryTextColor`}>Company Manager</h4>
+        <DashboardLayout>
+            <h1 className={`text-primaryTextColor font-bold text-2xl`}>Dashboard</h1>
+
+            <div className={`mt-5`}>
+                <div className={`grid grid-cols-12 gap-x-4 gap-y-4`}>
+                    <StatCards/>
+                </div>
+            </div>
+
+            <div className={`my-5`}>
+                <div className={`grid grid-cols-12 gap-x-4 gap-y-4 lg:max-h-[382px] overflow-hidden`}>
+                    <div className={`col-span-12 lg:col-span-8 max-h-[382px]`}>
+                        <div className={`bg-whiteColor rounded-2xl px-5 py-3 h-full`}>
+                            <div className={`flex items-center justify-between mb-5`}>
+                                <h1 className={`text-base text-primaryTextColor font-semibold`}>Total Revenue</h1>
+                                <div className={`flex items-center gap-4`}>
+                                    <div className={`flex items-center gap-1`}>
+                                        <div className={`size-3 rounded-full bg-[#6C5DD3]`}></div>
+                                        <h2 className={`text-xs text-secondaryTextColor font-semibold`}>Last Month</h2>
+                                    </div>
+                                    <div className={`flex items-center gap-1`}>
+                                        <div className={`size-3 rounded-full bg-[#CFC8FF]`}></div>
+                                        <h2 className={`text-xs text-secondaryTextColor font-semibold`}>Running
+                                            Month</h2>
+                                    </div>
+                                </div>
                             </div>
+                            <TotalRevenueBarChart/>
                         </div>
+                    </div>
+
+                    <div className={`col-span-12 lg:col-span-4`}>
+                        <PropertyReferrals/>
                     </div>
                 </div>
             </div>
 
-            <div className={`grid grid-cols-12`} style={{minHeight: 'calc(100vh - 72px)'}}>
-                <div className={`col-span-2`}>
-                    <Sidebar />
-                </div>
-
-                <div className={`col-span-12 md:col-span-10`}>
-                    <div className={`container mx-auto`}>
-                        <div className={``}>
-
-                        </div>
+            <div className={`mb-5`}>
+                <div className={`grid grid-cols-12 gap-x-4 gap-y-4`}>
+                    <div className={`col-span-12 md:col-span-6 xl:col-span-4 max-h-[360px]`}>
+                        <TopAgent />
+                    </div>
+                    <div className={`col-span-12 md:col-span-6 xl:col-span-4 max-h-[360px]`}>
+                        <Customer />
+                    </div>
+                    <div className={`col-span-12 md:col-span-6  xl:col-span-4 max-h-[360px]`}>
+                        <LatestSales />
                     </div>
                 </div>
             </div>
-        </main>
+
+            <div className={``}>
+                <PropertyList/>
+            </div>
+
+        </DashboardLayout>
     );
 }
