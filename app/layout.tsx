@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const manrope = Manrope({
-    variable: "--font-manrope",
+    // variable: "--font-manrope",
     subsets: ["latin"],
     weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-        <body className={`${manrope.variable} antialiased`}>{children}</body>
+        <body className={`${manrope.className}`}>{children}</body>
         </html>
     );
 }
