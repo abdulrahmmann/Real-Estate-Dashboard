@@ -1,6 +1,6 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
+import {Bar, BarChart, CartesianGrid, XAxis, YAxis} from "recharts"
 
 import {
     Card,
@@ -13,12 +13,12 @@ import {
     ChartTooltipContent,
 } from "@/components/ui/chart"
 const chartData = [
-    { month: "January", desktop: 186, mobile: 80 },
-    { month: "February", desktop: 305, mobile: 200 },
-    { month: "March", desktop: 237, mobile: 120 },
-    { month: "April", desktop: 73, mobile: 190 },
-    { month: "May", desktop: 209, mobile: 130 },
-    { month: "June", desktop: 214, mobile: 140 },
+    { month: "January", desktop: 850000, mobile: 423000 },
+    { month: "February", desktop: 631000, mobile: 320000 },
+    { month: "March", desktop: 217400, mobile: 159800 },
+    { month: "April", desktop: 179034, mobile: 115831 },
+    { month: "May", desktop: 436509, mobile: 351608 },
+    { month: "June", desktop: 216980, mobile: 168510 },
 ]
 
 const chartConfig = {
@@ -37,7 +37,7 @@ export function TotalRevenueBarChart() {
         <Card id={'totalRevenueBarChart'} className={`border-none shadow-none mb-3 bg-transparent`}>
             <CardContent>
                 <ChartContainer config={chartConfig} className="">
-                    <BarChart accessibilityLayer data={chartData} width={700} height={300}>
+                    <BarChart accessibilityLayer data={chartData} width={700} height={250}>
                         <CartesianGrid vertical={false} />
                         <XAxis
                             dataKey="month"
@@ -45,6 +45,12 @@ export function TotalRevenueBarChart() {
                             tickMargin={10}
                             axisLine={false}
                             tickFormatter={(value) => value.slice(0, 3)}
+                        />
+                        <YAxis
+                            tickLine={false}
+                            tickMargin={10}
+                            axisLine={false}
+                            tickFormatter={(value) => value/1000+"k"}
                         />
                         <ChartTooltip
                             cursor={false}

@@ -19,3 +19,19 @@ export interface LatestSalesType {
     image: string;
     price: string;
 }
+
+export interface PropertyListType {
+    id: number;
+    name: string;
+    country: string;
+    image: string;
+    price: string;
+}
+
+export interface NotificationsListType {
+    id: number;
+    title: string;
+    message: string;
+    dateTime: string;
+    notificationType: string;
+}

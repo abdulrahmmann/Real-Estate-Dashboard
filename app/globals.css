@@ -130,6 +130,11 @@ body {
 
 #totalRevenueBarChart .recharts-wrapper {
     width: 100% !important;
+    margin-bottom: 4rem;
+}
+#totalRevenueBarChart .recharts-responsive-container {
+    display: flex;
+    align-items: center;
 }
 
 #totalRevenueBarChart .p-6 {
@@ -138,4 +143,11 @@ body {
 
 #NewCustomersBarChart .p-6 {
     padding: 0 !important;
+}
+
+#propertyListCarousel button.-left-12  {
+    left: -20px !important;
+}
+#propertyListCarousel button:last-child {
+    right: -20px !important;
 }

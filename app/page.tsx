@@ -1,6 +1,4 @@
 import DashboardLayout from "@/app/Dashboard/layout";
-import {propertyReferrals} from "@/data";
-import {Progress} from "@/components/ui/progress";
 import React from "react";
 import StatCards from "@/components/StatCards";
 import {TotalRevenueBarChart} from "@/components/TotalRevenueBarChart";
@@ -9,6 +7,7 @@ import PropertyList from "@/components/PropertyList";
 import TopAgent from "@/components/TopAgent";
 import Customer from "@/components/Customer";
 import LatestSales from "@/components/LatestSales";
+import ProfileDropdown from "@/components/ProfileDropdown";
 
 export default function Home() {
     return (
@@ -66,6 +65,7 @@ export default function Home() {
             <div className={``}>
                 <PropertyList/>
             </div>
+
 
         </DashboardLayout>
     );
