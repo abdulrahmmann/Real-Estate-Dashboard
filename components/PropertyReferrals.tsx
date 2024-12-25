@@ -9,7 +9,7 @@ const PropertyReferrals = () => {
             <div className={`py-5`}>
                 {
                     propertyReferrals.map((property) => (
-                        <div className={`mb-4 last:mb-0`}>
+                        <div key={property.id} className={`mb-4 last:mb-0`}>
                             <div className={`flex items-center justify-between mb-3`}>
                                 <h3 className={`text-base text-primaryTextColor font-medium`}>{property.name}</h3>
                                 <h3 className={`text-base text-primaryTextColor font-medium`}>{property.percentage}%</h3>

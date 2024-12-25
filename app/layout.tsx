@@ -9,6 +9,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+    icons: "/Logo-notext.svg",
     title: "Real Estate Dashboard",
     description: "Modern Dashboard",
 };
