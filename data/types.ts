@@ -75,13 +75,12 @@ export interface PropertyDetailsUserType {
     propertis: number;
 }
 
-// export interface PropertyDetailsDescriptionType {
-//     name: string;
-//     country: string;
-//     propertyType?: string;
-//     price: string;
-//     rating: number;
-//     room?: number;
-//     area?: number;
-//     baths?: number;
-// }
+export interface AgentsType {
+    id: number;
+    agent: string;
+    country: string;
+    propertis: number;
+    phone: string;
+    email: string;
+    image: string;
+}

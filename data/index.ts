@@ -5,7 +5,7 @@ import {
     PropertyListType,
     StatsCardType,
     TopAgentType,
-    PropertyListDateDetailsType
+    PropertyListDateDetailsType, AgentsType
 } from "@/data/types";
 
 export const sidebar = [
@@ -606,3 +606,82 @@ export const PropertyListDateDetails: PropertyListDateDetailsType[] = [
         images: ["/real-estate/estate10.png", "/real-estate/details/d1.png", "/real-estate/details/d2.png",]
     }
 ];
+
+export const agentsList: AgentsType[] = [
+    {
+        id: 1,
+        agent: "Jennifer Doe",
+        propertis: 120,
+        country: "Washington, USA",
+        phone: "+06 62458031",
+        email: "jennifer.doe@gmail.com",
+        image: "/agents/a1.png"
+    },
+    {
+        id: 2,
+        agent: "Jane Smith",
+        propertis: 35,
+        country: "New york, USA",
+        phone: "+06 62458031",
+        email: "jane.smith@gmail.com",
+        image: "/agents/a2.png"
+    },
+    {
+        id: 3,
+        agent: "Jessica Johnson",
+        propertis: 42,
+        country: "Barcelona, Spain",
+        phone: "+06 62458031",
+        email: "jessica.johnson@gmail.com",
+        image: "/agents/a3.png"
+    },
+    {
+        id: 4,
+        agent: "Anna Lee",
+        propertis: 29,
+        country: "Tokyo, Japan",
+        phone: "+06 62458031",
+        email: "anna.lee@gmail.com",
+        image: "/agents/a4.png"
+    },
+    {
+        id: 5,
+        agent: "David Raddy",
+        propertis: 63,
+        country: "Tokyo, Japan",
+        phone: "+06 62458031",
+        email: "david.raddy@gmail.com",
+        image: "/agents/a5.png"
+    },
+    {
+        id: 6,
+        agent: "Melissa Wilson",
+        propertis: 63,
+        country: "Tokyo, Japan",
+        phone: "+06 62458031",
+        email: "melissa.wilson@gmail.com",
+        image: "/agents/a6.png"
+    },
+    {
+        id: 7,
+        agent: "Emily Garcia",
+        propertis: 63,
+        country: "Milano, Italy",
+        phone: "+06 62458031",
+        email: "wmily.garcia@gmail.com",
+        image: "/agents/a7.png"
+    },
+    {
+        id: 8,
+        agent: "Amanda Evans",
+        propertis: 63,
+        country: "London, UK",
+        phone: "+06 62458031",
+        email: "amanda.evans@gmail.com",
+        image: "/agents/a8.png"
+    },
+];
+
+
+
+
