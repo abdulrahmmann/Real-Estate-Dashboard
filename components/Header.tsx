@@ -4,6 +4,7 @@ import ProfileDropdown from "@/components/ProfileDropdown";
 import NotificationsSidebar from "@/components/NotificationsSidebar";
 import {MdOutlineLightMode} from "react-icons/md";
 import {MdOutlineDarkMode} from "react-icons/md";
+import SearchPopup from "@/components/SearchPopup";
 
 const Header = () => {
     const [profileDropdown, setProfileDropdown] = useState<boolean>(false);
@@ -14,33 +15,37 @@ const Header = () => {
         setThemeMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
     };
 
+    const handleExpand = () => {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
+    };
 
     return (
         <Fragment>
             <header className={`p-4 md:py-4 md:px-5`}>
                 <div className={`flex items-center justify-between`}>
-                    <div className={`flex items-center gap-4`}>
-                        <img src={"/icons/menu.svg"} alt={""} className={`size-5 block md:hidden mr-2`}/>
-                    </div>
+                    <button className={`flex items-center gap-4 xl:hidden mr-2`}>
+                        <img src={"/icons/menu.svg"} alt={""} className={`size-5`}/>
+                    </button>
 
-                    <div
-                        className={`flex items-center gap-1 md:w-[250px] xl:w-[20%] md:p-3 rounded-lg md:bg-[#F4F4F4]`}
-                    >
-                        <img src={"/icons/search.svg"} alt={""} className={`size-5 md:size-4`}/>
-                        <input
-                            placeholder={"Search Property, Customer etc"}
-                            className={`hidden md:inline text-xs text-secondaryTextColor border-none outline-none bg-transparent w-full`}
-                        />
-                    </div>
+                    <SearchPopup />
 
                     <div className={`flex items-center gap-5 pr-0 md:pr-5`}>
-
                         <button className="size-6" onClick={toggleTheme}>
                             {themeMode === "light" ? (
                                 <MdOutlineLightMode className="size-6 cursor-pointer text-sky-500"/>
                             ) : (
                                 <MdOutlineDarkMode className="size-6 cursor-pointer text-sky-500"/>
                             )}
+                        </button>
+
+                        <button onClick={handleExpand}>
+                            <img src={'/icons/expand.svg'} alt={'expand'} className={`size-6`}/>
                         </button>
 
                         <div className={`size-6 cursor-pointer`} onClick={() => setOpenNotification(!openNotification)}>

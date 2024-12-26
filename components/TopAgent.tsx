@@ -15,7 +15,7 @@ const TopAgent = () => {
             <div className={``}>
                 {
                     topAgent.map((agent) => (
-                        <TopAgentUser id={agent.id} name={agent.name} agent={agent.agent} image={agent.image} />
+                        <TopAgentUser key={agent.id} id={agent.id} name={agent.name} agent={agent.agent} image={agent.image} />
                     ))
                 }
             </div>

@@ -12,7 +12,9 @@ const Sidebar = () => {
     return (
         <div className="w-full h-full bg-whiteColor px-4 py-6 fixed left-0 top-0 max-w-[250px] z-10">
             <div className="mb-6">
-                <img src={'/Logo.svg'} alt="Logo" className="hidden md:block" />
+                <button>
+                    <img src={'/Logo.svg'} alt="Logo" className="hidden xl:block"/>
+                </button>
             </div>
             <div className="flex flex-col items-start gap-2">
                 {sidebar.map((item) => {
