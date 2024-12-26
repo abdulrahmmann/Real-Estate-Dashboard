@@ -1,17 +1,19 @@
-import {NotificationsListType} from "@/data/types";
+import { NotificationsListType } from "@/data/types";
 import React from "react";
 
-export const NotificationsItem = ({id, title, message, dateTime, notificationType}: NotificationsListType) => {
-    const typeConfig = {
-        Payment: {bgColor: '#38B259', icon: '/icons/payment.svg'},
-        Update: {bgColor: '#006CE4', icon: '/icons/update-apps.svg'},
-        Booking: {bgColor: '#EC4E2C', icon: '/icons/booking.svg'},
+type NotificationType = 'Payment' | 'Update' | 'Booking';
+
+export const NotificationsItem = ({ id, title, message, dateTime, notificationType }: NotificationsListType & { notificationType: NotificationType }) => {
+    const typeConfig: Record<NotificationType, { bgColor: string; icon: string }> = {
+        Payment: { bgColor: '#38B259', icon: '/icons/payment.svg' },
+        Update: { bgColor: '#006CE4', icon: '/icons/update-apps.svg' },
+        Booking: { bgColor: '#EC4E2C', icon: '/icons/booking.svg' },
     };
 
-    const type = typeConfig[`${notificationType}`];
+    const type = typeConfig[notificationType];
 
-    const bgColor = type ? type.bgColor : '#E4E4E4';
-    const icon = type ? type.icon : '/icons/default.svg';
+    const bgColor = type.bgColor;
+    const icon = type.icon;
 
     return (
         <div>
