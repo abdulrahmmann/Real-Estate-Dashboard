@@ -5,10 +5,11 @@ import {
     PropertyListType,
     StatsCardType,
     TopAgentType,
-    PropertyListDateDetailsType, AgentsType, ReviewListType
+    PropertyListDateDetailsType, AgentsType, ReviewListType, SidebarType, PropertyReferralsType
 } from "@/data/types";
 
-export const sidebar = [
+
+export const sidebar : SidebarType[] = [
     {
         id: 1,
         name: "Dashboard",
@@ -76,7 +77,7 @@ export const statsCard: StatsCardType[] = [
     },
 ];
 
-export const propertyReferrals = [
+export const propertyReferrals: PropertyReferralsType[] = [
     {
         id: 1,
         name: "Social Media",

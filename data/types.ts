@@ -1,3 +1,17 @@
+export interface SidebarType {
+    id: number;
+    name: string;
+    icon: string;
+    iconActive: string;
+    link: string;
+}
+
+export interface PropertyReferralsType {
+    id: number;
+    name: string;
+    percentage: number;
+    color: string;
+}
 
 export interface StatsCardType {
     id: number;
