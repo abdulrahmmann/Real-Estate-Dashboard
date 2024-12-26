@@ -114,3 +114,14 @@ export interface ActiveListingType {
     name: string;
     location: string;
 }
+
+export interface ReviewListType {
+    id: number;
+    name: string;
+    image: string;
+    codeId: string;
+    joinDate: string;
+    description: string;
+    rating: string [];
+    ratingCount: number;
+}

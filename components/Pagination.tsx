@@ -30,7 +30,7 @@ export default function Pagination() {
                 <div>
                     <p className="text-sm text-secondaryTextColor">
                         Showing <span className="font-medium">1</span> to <span
-                        className="font-medium">10</span> Propertys
+                        className="font-medium">10</span> Items
                     </p>
                 </div>
                 <div>

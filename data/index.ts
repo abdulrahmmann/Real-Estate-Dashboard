@@ -5,7 +5,7 @@ import {
     PropertyListType,
     StatsCardType,
     TopAgentType,
-    PropertyListDateDetailsType, AgentsType
+    PropertyListDateDetailsType, AgentsType, ReviewListType
 } from "@/data/types";
 
 export const sidebar = [
@@ -640,11 +640,11 @@ export const agentsList: AgentsType[] = [
 
         activeListing: [
             {
-             id: 1,
-             name: "Grand Royale Hotel",
-             price: 62000,
-             image: "/real-estate/estate1.png",
-             location: "North Carolina, USA",
+                id: 1,
+                name: "Grand Royale Hotel",
+                price: 62000,
+                image: "/real-estate/estate1.png",
+                location: "North Carolina, USA",
             },
             {
                 id: 2,
@@ -1210,6 +1210,57 @@ export const agentsList: AgentsType[] = [
     },
 ];
 
-
+export const ReviewList: ReviewListType[] = [
+    {
+        id: 1,
+        name: "Amanda Evans",
+        image: "/agents/a10.png",
+        codeId: "#CX0654",
+        description: "Friendly service Josh, Lunar and everyone at Just Property in Hastings deserved a big Thank You from us for moving us from Jakarta to Medan during the lockdown.",
+        joinDate: "25-04-2022",
+        rating: ["bad service", "unexpected"],
+        ratingCount: 4.8,
+    },
+    {
+        id: 2,
+        name: "Emily Garcia",
+        image: "/agents/a3.png",
+        codeId: "#HV3654",
+        description: "Friendly service Josh, Lunar and everyone at Just Property in Hastings deserved a big Thank You from us for moving us from Jakarta to Medan during the lockdown.",
+        joinDate: "7-09-2022",
+        rating: ["excellent", "great", "best services"],
+        ratingCount: 2.8,
+    },
+    {
+        id: 3,
+        name: "Melissa Wilson",
+        image: "/agents/a6.png",
+        codeId: "#QE3901",
+        description: "Friendly service Josh, Lunar and everyone at Just Property in Hastings deserved a big Thank You from us for moving us from Jakarta to Medan during the lockdown.",
+        joinDate: "17-08-2021",
+        rating: ["excellent", "great", "best services"],
+        ratingCount: 4.8,
+    },
+    {
+        id: 4,
+        name: "Jessica Johnson",
+        image: "/agents/a7.png",
+        codeId: "#RA0025",
+        description: "Friendly service Josh, Lunar and everyone at Just Property in Hastings deserved a big Thank You from us for moving us from Jakarta to Medan during the lockdown.",
+        joinDate: "25-04-2022",
+        rating: ["excellent", "great", "best services"],
+        ratingCount: 4.8,
+    },
+    {
+        id: 5,
+        name: "Jennifer Doe",
+        image: "/agents/a8.png",
+        codeId: "#WZ0226",
+        description: "Friendly service Josh, Lunar and everyone at Just Property in Hastings deserved a big Thank You from us for moving us from Jakarta to Medan during the lockdown.",
+        joinDate: "25-04-2022",
+        rating: ["bad service", "unexpected"],
+        ratingCount:2.7,
+    },
+];
 
 
