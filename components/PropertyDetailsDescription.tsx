@@ -4,32 +4,32 @@ import {FiMapPin} from "react-icons/fi";
 import Image from "next/image";
 import {TiStarFullOutline} from "react-icons/ti";
 
-const PropertyDetailsDescription = ({props}: PropertyListDateDetailsType) => {
+const PropertyDetailsDescription = ({id, description, propertyType, country, wifi, balcony, kitchen, price, rating, name, area, parkingArea, somokingArea, room, baths}: PropertyListDateDetailsType) => {
     return (
-        <div key={props.id} className={``}>
+        <div key={id} className={``}>
             <div className={`mt-4 grid grid-cols-12 gap-5`}>
                 <div className={`col-span-12 lg:col-span-9`}>
 
                     <div className={`flex items-start justify-between`}>
                         <div>
-                            <h3 className={`text-base font-medium text-primaryTextColor mb-1`}>{props.propertyType}</h3>
-                            <h3 className={`text-xl font-medium text-primaryTextColor mb-1.5`}>{props.name}</h3>
+                            <h3 className={`text-base font-medium text-primaryTextColor mb-1`}>{propertyType}</h3>
+                            <h3 className={`text-xl font-medium text-primaryTextColor mb-1.5`}>{name}</h3>
                             <div className="flex items-center gap-1">
                                 <FiMapPin color={'#808191'} className={`size-4`}/>
-                                <h4 className="text-sm text-[#808191]">{props.country}</h4>
+                                <h4 className="text-sm text-[#808191]">{country}</h4>
                             </div>
                         </div>
                         <div>
                             <div className={``}>
                                 <div className={`mb-2 flex items-center gap-0.5`}>
-                                    {Array.from({length: Math.round(props.rating)}, (_, index) => (
+                                    {Array.from({length: Math.round(rating)}, (_, index) => (
                                         <TiStarFullOutline key={index} className={`text-[#F2C94C] size-[18px]`}/>
                                     ))}
                                 </div>
                                 <h3 className={`text-sm font-semibold text-primaryTextColor mb-0`}>Price</h3>
                                 <h1 className={`text-xs text-secondaryTextColor font-medium`}>
                                     <span
-                                        className={`text-primaryColor text-lg font-bold`}>${(props.price / 365).toFixed(1)}</span> For
+                                        className={`text-primaryColor text-lg font-bold`}>${(Number(price) / 365).toFixed(1)}</span> For
                                     One Day
                                 </h1>
                             </div>
@@ -42,43 +42,43 @@ const PropertyDetailsDescription = ({props}: PropertyListDateDetailsType) => {
                         <div className={`mt-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5`}>
                             <div className={`flex items-center gap-1`}>
                                 <Image src={'/icons/bed.svg'} alt={'bed icon'} width={18} height={18}/>
-                                <h2 className={`text-sm text-primaryTextColor font-medium`}>{props.room} Rooms</h2>
+                                <h2 className={`text-sm text-primaryTextColor font-medium`}>{room} Rooms</h2>
                             </div>
                             <div className={`flex items-center gap-1`}>
                                 <Image src={'/icons/bath.svg'} alt={'bed icon'} width={18} height={18}/>
-                                <h2 className={`text-sm text-primaryTextColor font-medium`}>{props.baths} Baths</h2>
+                                <h2 className={`text-sm text-primaryTextColor font-medium`}>{baths} Baths</h2>
                             </div>
                             <div className={`flex items-center gap-1`}>
                                 <Image src={'/icons/estate-area.svg'} alt={'bed icon'} width={18} height={18}/>
-                                <h2 className={`text-sm text-primaryTextColor font-medium`}>{props.area}M Area</h2>
+                                <h2 className={`text-sm text-primaryTextColor font-medium`}>{area}M Area</h2>
                             </div>
                             <div className={`flex items-center gap-1`}>
                                 <Image src={'/icons/smooking.svg'} alt={'bed icon'} width={18} height={18}/>
                                 <h2 className={`text-sm text-primaryTextColor font-medium`}>
-                                    {props.somokingArea ? 'Smooking Area' : 'No Smooking Area'}
+                                    {somokingArea ? 'Smooking Area' : 'No Smooking Area'}
                                 </h2>
                             </div>
 
                             <div className={`flex items-center gap-1`}>
                                 <Image src={'/icons/kitchen.svg'} alt={'bed icon'} width={18} height={18}/>
-                                <h2 className={`text-sm text-primaryTextColor font-medium`}>{props.kitchen} Kitchen</h2>
+                                <h2 className={`text-sm text-primaryTextColor font-medium`}>{kitchen} Kitchen</h2>
                             </div>
                             <div className={`flex items-center gap-1`}>
                                 <Image src={'/icons/balcony.svg'} alt={'bed icon'} width={18} height={18}/>
                                 <h2 className={`text-sm text-primaryTextColor font-medium`}>
-                                    {props.balcony ? 'Balcony' : 'No Balcony'}
+                                    {balcony ? 'Balcony' : 'No Balcony'}
                                 </h2>
                             </div>
                             <div className={`flex items-center gap-1`}>
                                 <Image src={'/icons/wifi.svg'} alt={'bed icon'} width={18} height={18}/>
                                 <h2 className={`text-sm text-primaryTextColor font-medium`}>
-                                    {props.wifi ? 'Wifi' : 'No Wifi'}
+                                    {wifi ? 'Wifi' : 'No Wifi'}
                                 </h2>
                             </div>
                             <div className={`flex items-center gap-1`}>
                                 <Image src={'/icons/parking.svg'} alt={'bed icon'} width={18} height={18}/>
                                 <h2 className={`text-sm text-primaryTextColor font-medium`}>
-                                    {props.parkingArea ? 'Parking Area' : 'No Parking Area'}
+                                    {parkingArea ? 'Parking Area' : 'No Parking Area'}
                                 </h2>
                             </div>
                         </div>
@@ -86,7 +86,7 @@ const PropertyDetailsDescription = ({props}: PropertyListDateDetailsType) => {
                         <div className={`mt-5`}>
                             <h2 className={`text-lg text-primaryTextColor font-medium mb-1`}>Description</h2>
                             <p className={`text-sm text-secondaryTextColor font-normal tracking-wide leading-relaxed`}>
-                                {props.description}
+                                {description}
                             </p>
                         </div>
                     </div>
