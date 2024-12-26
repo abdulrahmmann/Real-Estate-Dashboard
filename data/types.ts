@@ -47,7 +47,7 @@ export interface NotificationsListType {
     title: string;
     message: string;
     dateTime: string;
-    notificationType: string;
+    notificationType: "Payment" | "Update" | "Booking";
 }
 
 export interface PropertyListDateType {
