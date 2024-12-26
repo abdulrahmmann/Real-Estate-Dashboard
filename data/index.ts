@@ -622,9 +622,9 @@ export const agentsList: AgentsType[] = [
         state: "Washington City",
         agentID: "#18457 865 8745",
         postCode: 1001,
-        instagram: "",
-        facebook: "",
-        twitter: "",
+        instagram: "https://www.instagram.com/",
+        facebook: "https://web.facebook.com/",
+        twitter: "https://x.com/",
         overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
             "annum. However, talented customers also earn a commission for finding their client's work.\n" +
             "Typically, agents receive around 10% of what the client is paid.",
@@ -697,9 +697,9 @@ export const agentsList: AgentsType[] = [
         state: "New York City",
         agentID: "#19357 021 8745",
         postCode: 5602,
-        instagram: "",
-        twitter: "",
-        facebook: "",
+        instagram: "https://www.instagram.com/",
+        facebook: "https://web.facebook.com/",
+        twitter: "https://x.com/",
         overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
             "annum. However, talented customers also earn a commission for finding their client's work.\n" +
             "Typically, agents receive around 10% of what the client is paid.",
@@ -772,9 +772,9 @@ export const agentsList: AgentsType[] = [
         state: "Barcelona",
         agentID: "#19357 021 8745",
         postCode: 5014,
-        instagram: "",
-        twitter: "",
-        facebook: "",
+        instagram: "https://www.instagram.com/",
+        facebook: "https://web.facebook.com/",
+        twitter: "https://x.com/",
         overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
             "annum. However, talented customers also earn a commission for finding their client's work.\n" +
             "Typically, agents receive around 10% of what the client is paid.",
@@ -847,9 +847,9 @@ export const agentsList: AgentsType[] = [
         state: "Tokyo",
         agentID: "#26004 365 9740",
         postCode: 6300,
-        instagram: "",
-        facebook: "",
-        twitter: "",
+        instagram: "https://www.instagram.com/",
+        facebook: "https://web.facebook.com/",
+        twitter: "https://x.com/",
         overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
             "annum. However, talented customers also earn a commission for finding their client's work.\n" +
             "Typically, agents receive around 10% of what the client is paid.",
@@ -922,9 +922,9 @@ export const agentsList: AgentsType[] = [
         state: "Kyoto",
         agentID: "#52103 365 9740",
         postCode: 1250,
-        instagram: "",
-        facebook: "",
-        twitter: "",
+        instagram: "https://www.instagram.com/",
+        facebook: "https://web.facebook.com/",
+        twitter: "https://x.com/",
         overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
             "annum. However, talented customers also earn a commission for finding their client's work.\n" +
             "Typically, agents receive around 10% of what the client is paid.",
@@ -997,9 +997,9 @@ export const agentsList: AgentsType[] = [
         state: "Roma",
         agentID: "#52103 365 9740",
         postCode: 3659,
-        instagram: "",
-        facebook: "",
-        twitter: "",
+        instagram: "https://www.instagram.com/",
+        facebook: "https://web.facebook.com/",
+        twitter: "https://x.com/",
         overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
             "annum. However, talented customers also earn a commission for finding their client's work.\n" +
             "Typically, agents receive around 10% of what the client is paid.",
@@ -1072,9 +1072,9 @@ export const agentsList: AgentsType[] = [
         state: "Napoli",
         agentID: "#52103 032 9900",
         postCode: 6598,
-        instagram: "",
-        facebook: "",
-        twitter: "",
+        instagram: "https://www.instagram.com/",
+        facebook: "https://web.facebook.com/",
+        twitter: "https://x.com/",
         overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
             "annum. However, talented customers also earn a commission for finding their client's work.\n" +
             "Typically, agents receive around 10% of what the client is paid.",
@@ -1147,9 +1147,9 @@ export const agentsList: AgentsType[] = [
         state: "London",
         agentID: "#59803 365 9740",
         postCode: 3659,
-        instagram: "",
-        twitter: "",
-        facebook: "",
+        instagram: "https://www.instagram.com/",
+        facebook: "https://web.facebook.com/",
+        twitter: "https://x.com/",
         overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
             "annum. However, talented customers also earn a commission for finding their client's work.\n" +
             "Typically, agents receive around 10% of what the client is paid.",

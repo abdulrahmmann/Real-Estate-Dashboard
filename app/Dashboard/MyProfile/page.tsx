@@ -53,7 +53,7 @@ const MyProfile = () => {
                         </div>
                     </div>
 
-                    <button className={`absolute top-[34%] right-5 mt-5 md:right-5 md:top-5`} onClick={() => setDropdown(!dropdown)}>
+                    <button className={`absolute top-[34%] right-5 mt-5 md:mt-0 md:right-5 md:top-5`} onClick={() => setDropdown(!dropdown)}>
                         <img src={'/icons/menu-dots.svg'} alt={''} className={`object-contain`} />
 
                         <div className={`${dropdown? 'block': 'hidden'}`}>

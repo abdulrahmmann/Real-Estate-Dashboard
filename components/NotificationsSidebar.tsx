@@ -5,7 +5,6 @@ import {notificationsList} from "@/data";
 import {IoMdNotifications} from "react-icons/io";
 import {NotificationsItem} from "@/components/NotificationsItem";
 import { ScrollArea } from "@/components/ui/scroll-area"
-import {ScrollAreaThumb} from "@radix-ui/react-scroll-area";
 
 export interface openNotificationType {
     openNotification?: boolean;
@@ -46,7 +45,7 @@ const NotificationsSidebar = ({ openNotification, setOpenNotification }: openNot
             </div>
             <div
                 className={`${openNotification ? 'flex' : 'hidden'} bg-transparent absolute rounded-full size-14 items-center justify-center border-2 border-primaryTextColor -left-[60px] top-1/2 -translate-y-1/2 cursor-pointer hover:rotate-[180deg] transition-transform z-20`}
-                onClick={() => setOpenNotification(false)}
+                onClick={() => setOpenNotification?.(false)}
             >
                 <IoCloseOutline className={`size-10 text-primaryTextColor`}/>
             </div>

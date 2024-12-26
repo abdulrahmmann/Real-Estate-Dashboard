@@ -59,13 +59,13 @@ const AgentInfo = ({image, agent, age, city, state, country, phone, email, postC
 
             <div className={`my-0`}>
                 <div className={`flex items-center justify-center gap-2`}>
-                    <Link href={`${facebook}`} className={`size-9 rounded-full bg-[#F7F7F7] flex items-center justify-center`}>
+                    <Link href={`/${facebook}`} className={`size-9 rounded-full bg-[#F7F7F7] flex items-center justify-center`}>
                         <FaFacebookF className={`size-[18px] text-[#1976D2]`} />
                     </Link>
-                    <Link href={`${instagram}`} className={`size-9 rounded-full bg-[#F7F7F7] flex items-center justify-center`}>
+                    <Link href={`/${instagram}`} className={`size-9 rounded-full bg-[#F7F7F7] flex items-center justify-center`}>
                         <img src={'/logo-instagram.svg'} alt={''} className={`size-[18px]`} />
                     </Link>
-                    <Link href={`${twitter}`} className={`size-9 rounded-full bg-[#F7F7F7] flex items-center justify-center`}>
+                    <Link href={`/${twitter}`} className={`size-9 rounded-full bg-[#F7F7F7] flex items-center justify-center`}>
                         <FaXTwitter className={`size-[18px]`} />
                     </Link>
                 </div>
