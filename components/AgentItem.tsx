@@ -1,15 +1,15 @@
 import React from "react";
-import Image from "next/image";
 import { FaBuilding } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import {AgentsType} from "@/data/types";
+import Link from "next/link";
 
 export const AgentItem = ({id, agent, propertis, country, phone, email, image}: AgentsType) => {
     return (
-        <div key={id} className={`bg-whiteColor rounded-xl p-5 h-[230px]`}
-             style={{boxShadow: "box-shadow: 0px 22px 45px 2px rgba(176, 176, 176, 0.1);"}}>
+        <Link href={'/Dashboard/Agent/${id}'} key={id} className={`bg-whiteColor rounded-xl p-5 h-[230px]`}
+             style={{boxShadow: "0px 22px 45px 2px rgba(176, 176, 176, 0.1)"}}>
             <div className={`relative flex items-start gap-5`}>
                 <img src={image} alt={'agent image'} className={`w-[130px] h-[110px] sm:w-[250px] sm:h-[190px] rounded-xl`} />
                 <div className={``}>
@@ -35,6 +35,6 @@ export const AgentItem = ({id, agent, propertis, country, phone, email, image}: 
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }

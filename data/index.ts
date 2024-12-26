@@ -615,16 +615,148 @@ export const agentsList: AgentsType[] = [
         country: "Washington, USA",
         phone: "+06 62458031",
         email: "jennifer.doe@gmail.com",
-        image: "/agents/a1.png"
+        image: "/agents/a1.png",
+
+        age: 30,
+        city: "Washington",
+        state: "Washington City",
+        agentID: "#18457 865 8745",
+        postCode: 1001,
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
+            "annum. However, talented customers also earn a commission for finding their client's work.\n" +
+            "Typically, agents receive around 10% of what the client is paid.",
+
+        agency: "All American Real Estate",
+        agentLicense: "3124 9764 9700 234",
+        taxNumber: "TX 87D0 678H PQ45",
+        serviceArea: "Chicago, Los Angeles, New York, Miami beach",
+
+        totalListings: 1050,
+        propertiesSold: 650,
+        propertiesRent: 400,
+
+        activeListing: [
+            {
+             id: 1,
+             name: "Grand Royale Hotel",
+             price: 62000,
+             image: "/real-estate/estate1.png",
+             location: "North Carolina, USA",
+            },
+            {
+                id: 2,
+                name: "Luxe Stay Apartments",
+                price: 87000,
+                image: "/real-estate/estate2.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 3,
+                name: "Central Inn",
+                price: 74000,
+                image: "/real-estate/estate3.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 4,
+                name: "Luxe Residence",
+                price: 98000,
+                image: "/real-estate/estate4.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 5,
+                name: "Skyline Apartments",
+                price: 56000,
+                image: "/real-estate/estate5.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 6,
+                name: "Beach Hotel",
+                price: 98000,
+                image: "/real-estate/estate6.png",
+                location: "North Carolina, USA",
+            },
+        ],
     },
     {
         id: 2,
         agent: "Jane Smith",
         propertis: 35,
-        country: "New york, USA",
+        country: "New York, USA",
         phone: "+06 62458031",
         email: "jane.smith@gmail.com",
-        image: "/agents/a2.png"
+        image: "/agents/a2.png",
+
+        age: 27,
+        city: "New York ",
+        state: "New York City",
+        agentID: "#19357 021 8745",
+        postCode: 5602,
+        instagram: "",
+        twitter: "",
+        facebook: "",
+        overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
+            "annum. However, talented customers also earn a commission for finding their client's work.\n" +
+            "Typically, agents receive around 10% of what the client is paid.",
+
+        agency: "All American Real Estate",
+        agentLicense: "3124 9764 9700 234",
+        taxNumber: "TX 87D0 678H PQ45",
+        serviceArea: "Chicago, Los Angeles, New York, Miami beach",
+
+        totalListings: 950,
+        propertiesSold: 468,
+        propertiesRent: 325,
+
+        activeListing: [
+            {
+                id: 1,
+                name: "Grand Royale Hotel",
+                price: 62000,
+                image: "/real-estate/estate1.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 2,
+                name: "Luxe Stay Apartments",
+                price: 87000,
+                image: "/real-estate/estate2.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 3,
+                name: "Central Inn",
+                price: 74000,
+                image: "/real-estate/estate3.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 4,
+                name: "Luxe Residence",
+                price: 98000,
+                image: "/real-estate/estate4.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 5,
+                name: "Skyline Apartments",
+                price: 56000,
+                image: "/real-estate/estate5.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 6,
+                name: "Beach Hotel",
+                price: 98000,
+                image: "/real-estate/estate6.png",
+                location: "North Carolina, USA",
+            },
+        ],
     },
     {
         id: 3,
@@ -633,7 +765,73 @@ export const agentsList: AgentsType[] = [
         country: "Barcelona, Spain",
         phone: "+06 62458031",
         email: "jessica.johnson@gmail.com",
-        image: "/agents/a3.png"
+        image: "/agents/a3.png",
+
+        age: 29,
+        city: "Barcelona City",
+        state: "Barcelona",
+        agentID: "#19357 021 8745",
+        postCode: 5014,
+        instagram: "",
+        twitter: "",
+        facebook: "",
+        overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
+            "annum. However, talented customers also earn a commission for finding their client's work.\n" +
+            "Typically, agents receive around 10% of what the client is paid.",
+
+        agency: "All Spain Real Estate",
+        agentLicense: "3124 9764 9700 234",
+        taxNumber: "TX 87D0 678H PQ45",
+        serviceArea: "Barcelona, Madrid, Seville, Valencia, Girona, Osasuna",
+
+        totalListings: 758,
+        propertiesSold: 258,
+        propertiesRent: 300,
+
+        activeListing: [
+            {
+                id: 1,
+                name: "Grand Royale Hotel",
+                price: 62000,
+                image: "/real-estate/estate1.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 2,
+                name: "Luxe Stay Apartments",
+                price: 87000,
+                image: "/real-estate/estate2.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 3,
+                name: "Central Inn",
+                price: 74000,
+                image: "/real-estate/estate3.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 4,
+                name: "Luxe Residence",
+                price: 98000,
+                image: "/real-estate/estate4.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 5,
+                name: "Skyline Apartments",
+                price: 56000,
+                image: "/real-estate/estate5.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 6,
+                name: "Beach Hotel",
+                price: 98000,
+                image: "/real-estate/estate6.png",
+                location: "North Carolina, USA",
+            },
+        ],
     },
     {
         id: 4,
@@ -642,43 +840,373 @@ export const agentsList: AgentsType[] = [
         country: "Tokyo, Japan",
         phone: "+06 62458031",
         email: "anna.lee@gmail.com",
-        image: "/agents/a4.png"
+        image: "/agents/a4.png",
+
+        age: 29,
+        city: "Tokyo City",
+        state: "Tokyo",
+        agentID: "#26004 365 9740",
+        postCode: 6300,
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
+            "annum. However, talented customers also earn a commission for finding their client's work.\n" +
+            "Typically, agents receive around 10% of what the client is paid.",
+
+        agency: "All Japan Real Estate",
+        agentLicense: "3124 9764 9700 234",
+        taxNumber: "TX 87D0 678H PQ45",
+        serviceArea: "Tokyo, Kyoto, Hiroshima, Naha, Mito, Himeji",
+
+        totalListings: 1524,
+        propertiesSold: 869,
+        propertiesRent: 541,
+
+        activeListing: [
+            {
+                id: 1,
+                name: "Grand Royale Hotel",
+                price: 62000,
+                image: "/real-estate/estate1.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 2,
+                name: "Luxe Stay Apartments",
+                price: 87000,
+                image: "/real-estate/estate2.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 3,
+                name: "Central Inn",
+                price: 74000,
+                image: "/real-estate/estate3.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 4,
+                name: "Luxe Residence",
+                price: 98000,
+                image: "/real-estate/estate4.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 5,
+                name: "Skyline Apartments",
+                price: 56000,
+                image: "/real-estate/estate5.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 6,
+                name: "Beach Hotel",
+                price: 98000,
+                image: "/real-estate/estate6.png",
+                location: "North Carolina, USA",
+            },
+        ],
     },
     {
         id: 5,
         agent: "David Raddy",
         propertis: 63,
-        country: "Tokyo, Japan",
+        country: "Kyoto, Japan",
         phone: "+06 62458031",
         email: "david.raddy@gmail.com",
-        image: "/agents/a5.png"
+        image: "/agents/a5.png",
+
+        age: 32,
+        city: "Kyoto City",
+        state: "Kyoto",
+        agentID: "#52103 365 9740",
+        postCode: 1250,
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
+            "annum. However, talented customers also earn a commission for finding their client's work.\n" +
+            "Typically, agents receive around 10% of what the client is paid.",
+
+        agency: "All Japan Real Estate",
+        agentLicense: "3124 9764 9700 234",
+        taxNumber: "TX 87D0 678H PQ45",
+        serviceArea: "Tokyo, Kyoto, Hiroshima, Naha, Mito, Himeji",
+
+        totalListings: 1050,
+        propertiesSold: 650,
+        propertiesRent: 400,
+
+        activeListing: [
+            {
+                id: 1,
+                name: "Grand Royale Hotel",
+                price: 62000,
+                image: "/real-estate/estate1.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 2,
+                name: "Luxe Stay Apartments",
+                price: 87000,
+                image: "/real-estate/estate2.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 3,
+                name: "Central Inn",
+                price: 74000,
+                image: "/real-estate/estate3.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 4,
+                name: "Luxe Residence",
+                price: 98000,
+                image: "/real-estate/estate4.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 5,
+                name: "Skyline Apartments",
+                price: 56000,
+                image: "/real-estate/estate5.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 6,
+                name: "Beach Hotel",
+                price: 98000,
+                image: "/real-estate/estate6.png",
+                location: "North Carolina, USA",
+            },
+        ],
     },
     {
         id: 6,
         agent: "Melissa Wilson",
         propertis: 63,
-        country: "Tokyo, Japan",
+        country: "Roma, Milano",
         phone: "+06 62458031",
         email: "melissa.wilson@gmail.com",
-        image: "/agents/a6.png"
+        image: "/agents/a6.png",
+
+        age: 32,
+        city: "Roma City",
+        state: "Roma",
+        agentID: "#52103 365 9740",
+        postCode: 3659,
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
+            "annum. However, talented customers also earn a commission for finding their client's work.\n" +
+            "Typically, agents receive around 10% of what the client is paid.",
+
+        agency: "All Italy Real Estate",
+        agentLicense: "3124 9764 9700 234",
+        taxNumber: "TX 87D0 678H PQ45",
+        serviceArea: "Milano, Napoli, Roma",
+
+        totalListings: 2543,
+        propertiesSold: 987,
+        propertiesRent: 586,
+
+        activeListing: [
+            {
+                id: 1,
+                name: "Grand Royale Hotel",
+                price: 62000,
+                image: "/real-estate/estate1.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 2,
+                name: "Luxe Stay Apartments",
+                price: 87000,
+                image: "/real-estate/estate2.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 3,
+                name: "Central Inn",
+                price: 74000,
+                image: "/real-estate/estate3.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 4,
+                name: "Luxe Residence",
+                price: 98000,
+                image: "/real-estate/estate4.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 5,
+                name: "Skyline Apartments",
+                price: 56000,
+                image: "/real-estate/estate5.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 6,
+                name: "Beach Hotel",
+                price: 98000,
+                image: "/real-estate/estate6.png",
+                location: "North Carolina, USA",
+            },
+        ],
     },
     {
         id: 7,
         agent: "Emily Garcia",
         propertis: 63,
-        country: "Milano, Italy",
+        country: "Napoli, Italy",
         phone: "+06 62458031",
         email: "wmily.garcia@gmail.com",
-        image: "/agents/a7.png"
+        image: "/agents/a7.png",
+
+        age: 32,
+        city: "Napoli City",
+        state: "Napoli",
+        agentID: "#52103 032 9900",
+        postCode: 6598,
+        instagram: "",
+        facebook: "",
+        twitter: "",
+        overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
+            "annum. However, talented customers also earn a commission for finding their client's work.\n" +
+            "Typically, agents receive around 10% of what the client is paid.",
+
+        agency: "All Japan Real Estate",
+        agentLicense: "3124 9764 9700 234",
+        taxNumber: "TX 87D0 678H PQ45",
+        serviceArea: "Milano, Napoli, Roma",
+
+        totalListings: 985,
+        propertiesSold: 854,
+        propertiesRent: 658,
+
+        activeListing: [
+            {
+                id: 1,
+                name: "Grand Royale Hotel",
+                price: 62000,
+                image: "/real-estate/estate1.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 2,
+                name: "Luxe Stay Apartments",
+                price: 87000,
+                image: "/real-estate/estate2.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 3,
+                name: "Central Inn",
+                price: 74000,
+                image: "/real-estate/estate3.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 4,
+                name: "Luxe Residence",
+                price: 98000,
+                image: "/real-estate/estate4.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 5,
+                name: "Skyline Apartments",
+                price: 56000,
+                image: "/real-estate/estate5.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 6,
+                name: "Beach Hotel",
+                price: 98000,
+                image: "/real-estate/estate6.png",
+                location: "North Carolina, USA",
+            },
+        ],
     },
     {
         id: 8,
         agent: "Amanda Evans",
-        propertis: 63,
+        propertis: 25,
         country: "London, UK",
         phone: "+06 62458031",
         email: "amanda.evans@gmail.com",
-        image: "/agents/a8.png"
+        image: "/agents/a8.png",
+
+        age: 26,
+        city: "London City",
+        state: "London",
+        agentID: "#59803 365 9740",
+        postCode: 3659,
+        instagram: "",
+        twitter: "",
+        facebook: "",
+        overview: "Talent customers tend to earn a basic salary in the range of £15,000 to £35,000 per\n" +
+            "annum. However, talented customers also earn a commission for finding their client's work.\n" +
+            "Typically, agents receive around 10% of what the client is paid.",
+
+        agency: "All UK Real Estate",
+        agentLicense: "3124 9764 9700 234",
+        taxNumber: "TX 87D0 678H PQ45",
+        serviceArea: "London, Liverpool, Manchester",
+
+        totalListings: 1050,
+        propertiesSold: 650,
+        propertiesRent: 400,
+
+        activeListing: [
+            {
+                id: 1,
+                name: "Grand Royale Hotel",
+                price: 62000,
+                image: "/real-estate/estate1.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 2,
+                name: "Luxe Stay Apartments",
+                price: 87000,
+                image: "/real-estate/estate2.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 3,
+                name: "Central Inn",
+                price: 74000,
+                image: "/real-estate/estate3.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 4,
+                name: "Luxe Residence",
+                price: 98000,
+                image: "/real-estate/estate4.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 5,
+                name: "Skyline Apartments",
+                price: 56000,
+                image: "/real-estate/estate5.png",
+                location: "North Carolina, USA",
+            },
+            {
+                id: 6,
+                name: "Beach Hotel",
+                price: 98000,
+                image: "/real-estate/estate6.png",
+                location: "North Carolina, USA",
+            },
+        ],
     },
 ];
 

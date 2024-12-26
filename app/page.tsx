@@ -7,7 +7,6 @@ import PropertyList from "@/components/PropertyList";
 import TopAgent from "@/components/TopAgent";
 import Customer from "@/components/Customer";
 import LatestSales from "@/components/LatestSales";
-import ProfileDropdown from "@/components/ProfileDropdown";
 
 export default function Home() {
     return (

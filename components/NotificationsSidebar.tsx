@@ -15,7 +15,7 @@ export interface openNotificationType {
 const NotificationsSidebar = ({ openNotification, setOpenNotification }: openNotificationType) => {
     return (
         <div
-            className={`fixed inset-y-0 right-0 z-10 transform ${
+            className={`fixed inset-y-0 right-0 z-50 transform ${
                 openNotification ? "translate-x-0 shadow-lg drop-shadow-lg" : "translate-x-full"
             } transition-transform duration-300 rounded-bl-3xl rounded-tl-3xl`}
             >

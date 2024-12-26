@@ -10,7 +10,7 @@ const Agent = () => {
         <Fragment>
             <div className={`flex items-center justify-between`}>
                 <h1 className={`text-primaryTextColor font-bold text-2xl`}>Agents List</h1>
-                <Link href={''}>
+                <Link href={'/Dashboard/Agent/add-new-agent'}>
                     <Button
                         className={`text-sm text-whiteColor font-medium px-5 py-3 bg-primaryColor rounded-xl hover:bg-primaryColor hover:text-whiteColor h-12`}>
                         + Add Agent

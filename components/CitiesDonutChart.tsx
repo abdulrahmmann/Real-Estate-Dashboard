@@ -38,7 +38,7 @@ const chartConfig: ChartConfig = {
 
 export function CitiesDonutChart() {
     return (
-        <Card className="flex flex-col border-none shadow-none mb-3">
+        <Card className="flex flex-col border-none shadow-none mb-3 bg-transparent">
             <CardContent className="flex-1 pb-0">
                 <ChartContainer
                     config={chartConfig}

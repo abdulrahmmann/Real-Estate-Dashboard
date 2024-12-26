@@ -76,11 +76,41 @@ export interface PropertyDetailsUserType {
 }
 
 export interface AgentsType {
+    id?: number;
+    agent?: string;
+    country?: string;
+    propertis?: number;
+    phone?: string;
+    email?: string;
+    image?: string;
+
+    age?: number;
+    city?: string;
+    state?: string;
+    postCode?: number;
+    agentID?: string;
+    instagram?: string;
+    twitter?: string;
+    facebook?: string;
+
+    overview?: string;
+
+    agency?: string;
+    agentLicense?: string;
+    taxNumber?: string;
+    serviceArea?: string;
+
+    totalListings?: number;
+    propertiesSold?: number;
+    propertiesRent?: number;
+
+    activeListing?: ActiveListingType[];
+}
+
+export interface ActiveListingType {
     id: number;
-    agent: string;
-    country: string;
-    propertis: number;
-    phone: string;
-    email: string;
     image: string;
+    price: number;
+    name: string;
+    location: string;
 }
