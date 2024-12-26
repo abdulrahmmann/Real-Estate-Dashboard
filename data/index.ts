@@ -37,13 +37,13 @@ export const sidebar = [
         iconActive: "/icons/white-review-icon.svg",
         link: '/Dashboard/Review',
     },
-    {
-        id: 5,
-        name: "Message",
-        icon: "/icons/message-icon.svg",
-        iconActive: "/icons/white-message-icon.svg",
-        link: '/Dashboard/Message',
-    },
+    // {
+    //     id: 5,
+    //     name: "Message",
+    //     icon: "/icons/message-icon.svg",
+    //     iconActive: "/icons/white-message-icon.svg",
+    //     link: '/Dashboard/Message',
+    // },
     {
         id: 6,
         name: "My Profile",
@@ -1219,7 +1219,7 @@ export const ReviewList: ReviewListType[] = [
         description: "Friendly service Josh, Lunar and everyone at Just Property in Hastings deserved a big Thank You from us for moving us from Jakarta to Medan during the lockdown.",
         joinDate: "25-04-2022",
         rating: ["bad service", "unexpected"],
-        ratingCount: 4.8,
+        ratingCount: 2.8,
     },
     {
         id: 2,
@@ -1229,7 +1229,7 @@ export const ReviewList: ReviewListType[] = [
         description: "Friendly service Josh, Lunar and everyone at Just Property in Hastings deserved a big Thank You from us for moving us from Jakarta to Medan during the lockdown.",
         joinDate: "7-09-2022",
         rating: ["excellent", "great", "best services"],
-        ratingCount: 2.8,
+        ratingCount: 4.8,
     },
     {
         id: 3,
